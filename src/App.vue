@@ -75,7 +75,6 @@ function submitCommand(counter) {
 
 onMounted(() => {
   window.addEventListener('keydown', handlePressKey)
-  loadDefaultImages()
 })
 onUnmounted(() => {
   window.removeEventListener('keydown', handlePressKey)
