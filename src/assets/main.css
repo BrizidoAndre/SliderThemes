@@ -1,0 +1,39 @@
+@import "bootstrap.min.css";
+
+.aside-slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .7);
+    width: 30%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .4s;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.aside-image {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.aside-btn {
+    cursor: pointer;
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    transition: .4s;
+    z-index: 9;
+}
