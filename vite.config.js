@@ -9,7 +9,6 @@ export default defineConfig({
     plugins: [
         vue(),
     ],
-    base: '/andre/SP_module_slide',
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
